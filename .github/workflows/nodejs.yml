@@ -24,7 +24,7 @@ jobs:
             ${{ runner.OS }}-
 
       - name: Install deps via NPM
-        run: npm install
+        run: npm install && npm install playwright
 
       - name: Run browser automation tests
         run: npm start
