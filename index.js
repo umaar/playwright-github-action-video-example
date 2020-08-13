@@ -11,7 +11,7 @@ await mkdir(artifactsFolder, {recursive: true});
 console.log('Launching Chrome');
 
 const browser = await chromium.launch({
-	headless: false,
+	headless: true,
 	slowMo: 100
 });
 const context = await browser.newContext();
